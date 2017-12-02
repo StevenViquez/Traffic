@@ -63,6 +63,12 @@
     <Compile Include="GUI\FrmAgregarNumeroRegistro.Designer.cs">
       <DependentUpon>FrmAgregarNumeroRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FrmAgregarUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmAgregarUser.Designer.cs">
+      <DependentUpon>FrmAgregarUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\FrmCrearEvento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FrmAgregarNumeroRegistro.resx">
       <DependentUpon>FrmAgregarNumeroRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmAgregarUser.resx">
+      <DependentUpon>FrmAgregarUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FrmCrearEvento.resx">
       <DependentUpon>FrmCrearEvento.cs</DependentUpon>

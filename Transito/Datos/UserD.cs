@@ -66,6 +66,30 @@ namespace Datos
         }
 
         /// <summary>
+        /// Obtiene una lista cargada de todo los eventos, se filtra con el parametro pEstado
+        /// </summary>
+        /// <returns>Retorna una lista de tipo EventoE</returns>
+        public List<UserE> obtenerUsuarios()
+        {
+
+            this.limpiarError();
+            List<UserE> users = new List<UserE>();
+            DataSet dsetUsers;
+            string sql = "SELECT * FROM scheventos.usuario";
+
+            dsetUsers = this.conexion.ejecutarConsultaSQL(sql);
+            string error = this.conexion.ErrorDescripcion;
+            foreach (DataRow tupla in dsetUsers.Tables[0].Rows)
+            {
+                UserE oEventos = new UserE(tupla[0].ToString(), tupla[1].ToString(),
+                    tupla[2].ToString(), tupla[3].ToString());
+                users.Add(oEventos);
+            }
+            return users
+                ;
+        }
+
+        /// <summary>
         /// agrega un usuario a la BD
         /// </summary>
         /// <param name="oUser">Objeto de la clase UserE</param>

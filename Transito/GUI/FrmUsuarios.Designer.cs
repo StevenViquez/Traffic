@@ -34,9 +34,9 @@
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.btnBorrar = new System.Windows.Forms.ToolStripButton();
             this.btnRecargar = new System.Windows.Forms.ToolStripButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.userGrid = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -90,26 +90,27 @@
             this.btnRecargar.Text = "Recargar";
             this.btnRecargar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             // 
-            // dataGridView1
+            // userGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 45);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(499, 261);
-            this.dataGridView1.TabIndex = 1;
+            this.userGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.userGrid.Location = new System.Drawing.Point(12, 45);
+            this.userGrid.Name = "userGrid";
+            this.userGrid.Size = new System.Drawing.Size(499, 261);
+            this.userGrid.TabIndex = 1;
+            this.userGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(523, 317);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.userGrid);
             this.Controls.Add(this.toolStrip1);
             this.Name = "FrmUsuarios";
             this.Text = "Usuarios";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,6 +123,6 @@
         private System.Windows.Forms.ToolStripButton btnEditar;
         private System.Windows.Forms.ToolStripButton btnBorrar;
         private System.Windows.Forms.ToolStripButton btnRecargar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView userGrid;
     }
 }

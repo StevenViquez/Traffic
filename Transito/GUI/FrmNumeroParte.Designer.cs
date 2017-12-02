@@ -69,6 +69,7 @@
             this.Controls.Add(this.txtNumeroParte);
             this.Name = "FrmNumeroParte";
             this.Text = "Numero de parte";
+            this.Load += new System.EventHandler(this.FrmNumeroParte_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

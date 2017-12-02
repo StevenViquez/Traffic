@@ -30,7 +30,7 @@ namespace GUI
             if (this.txtNumeroDeRegistro.Text != "")
             {
                 this.numeroRegistro = Convert.ToInt32(this.txtNumeroDeRegistro.Text);
-                this.Hide();
+                this.Close();
             }
         }
     }

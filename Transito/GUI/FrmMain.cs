@@ -160,5 +160,12 @@ namespace GUI
             FrmUsuarios oFrmUsuarios = new FrmUsuarios();
             oFrmUsuarios.ShowDialog();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            FrmLogin oFrmLogin = new FrmLogin();
+            oFrmLogin.Show();
+            this.Close();
+        }
     }
 }

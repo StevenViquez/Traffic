@@ -33,5 +33,10 @@ namespace GUI
                 this.Hide();
             }
         }
+
+        private void FrmNumeroParte_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

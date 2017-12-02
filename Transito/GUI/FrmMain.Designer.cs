@@ -30,8 +30,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuOpciones = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCrearEvento = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAprobarCompletar = new System.Windows.Forms.Button();
             this.menuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAprobarCompletar = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mainGrid)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -106,6 +107,13 @@
             this.menuCrearEvento.Text = "Crear evento";
             this.menuCrearEvento.Click += new System.EventHandler(this.menuCrearEvento_Click);
             // 
+            // menuUsuarios
+            // 
+            this.menuUsuarios.Name = "menuUsuarios";
+            this.menuUsuarios.Size = new System.Drawing.Size(203, 22);
+            this.menuUsuarios.Text = "Mantenimiento usuarios";
+            this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
+            // 
             // btnAprobarCompletar
             // 
             this.btnAprobarCompletar.Location = new System.Drawing.Point(13, 22);
@@ -116,18 +124,22 @@
             this.btnAprobarCompletar.UseVisualStyleBackColor = true;
             this.btnAprobarCompletar.Click += new System.EventHandler(this.btnAprobarCompletar_Click);
             // 
-            // menuUsuarios
+            // btnSalir
             // 
-            this.menuUsuarios.Name = "menuUsuarios";
-            this.menuUsuarios.Size = new System.Drawing.Size(203, 22);
-            this.menuUsuarios.Text = "Mantenimiento usuarios";
-            this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
+            this.btnSalir.Location = new System.Drawing.Point(464, 22);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(87, 23);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(571, 392);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnAprobarCompletar);
             this.Controls.Add(this.mainGrid);
             this.Controls.Add(this.menuStrip1);
@@ -154,6 +166,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn propietario;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroParte;
         private System.Windows.Forms.ToolStripMenuItem menuUsuarios;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

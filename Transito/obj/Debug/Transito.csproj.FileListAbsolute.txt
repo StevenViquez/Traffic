@@ -18,3 +18,4 @@ C:\Users\Nana\Desktop\C#\Transito\Transito\obj\Debug\GUI.FrmCrearEvento.resource
 C:\Users\Nana\Desktop\C#\Transito\Transito\obj\Debug\GUI.FrmNumeroParte.resources
 C:\Users\Nana\Desktop\C#\Transito\Transito\obj\Debug\GUI.FrmAgregarNumeroRegistro.resources
 C:\Users\Nana\Desktop\C#\Transito\Transito\obj\Debug\GUI.FrmUsuarios.resources
+C:\Users\Nana\Desktop\C#\Transito\Transito\obj\Debug\GUI.FrmAgregarUser.resources
