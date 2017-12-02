@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Conexion 
+xmlns="http://schemas.microsoft.com/sqlserver/2004/bulkload/format" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<RECORD>
+<Server>localhost</Server>
+<Port>5432</Port>
+<Usuario>steven</Usuario>
+<Password>Ligadeportiva1</Password>
+<Database>eventos</Database>
+<schema>scheventos</schema>
+</RECORD>
+</Conexion>
